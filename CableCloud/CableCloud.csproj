@@ -63,7 +63,7 @@
     <Content Include="bin\Debug\NodeLinks.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\tsst_client\tsst_client\tsst_client.csproj">
+    <ProjectReference Include="..\..\tsst_client\tsst_client\tsst_client.csproj">
       <Project>{f9a62193-8c61-4da8-bc84-ed8efdf2104a}</Project>
       <Name>tsst_client</Name>
     </ProjectReference>

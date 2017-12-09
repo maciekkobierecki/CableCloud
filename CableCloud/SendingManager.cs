@@ -31,8 +31,11 @@ namespace CableCloud
                 byte[] preparedData = PrepareDataToSend(sourceNode, sourcePort,destinationPort, dataToSend);
                 String destinationNodeName = ConnectionsTable.getDestinationNodeName(sourceNode, sourcePort);
                 OutSocket outputSocket = getAssociatedSocket(destinationNodeName);
-                outputSocket.Send(preparedData);
-                PrintSendInformation(outputSocket, destinationPort);
+                if (outputSocket!=null)
+                {
+                    outputSocket.Send(preparedData);
+                    PrintSendInformation(outputSocket, destinationPort);
+                }
             }
         }
 
@@ -92,6 +95,11 @@ namespace CableCloud
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(timeStamp + " | Sent to node " + outputSocket.getNodeName() + " to port " + destinationPort.ToString() + Environment.NewLine);
             
+        }
+
+        public static void removeSocket(OutSocket outSocket)
+        {
+            outSockets.Remove(outSocket);
         }
     }
 }

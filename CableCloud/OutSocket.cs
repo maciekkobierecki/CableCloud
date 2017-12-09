@@ -43,13 +43,22 @@ namespace CableCloud
             IPEndPoint ipe = new IPEndPoint(myAddress, port);
             return new Socket(ipe.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
         }
+
         public String getNodeName()
         {
             return nodeName;
         }
+
         public Socket getOutputSocket()
         {
             return outSocket;
+        }
+
+        public Boolean isConnected()
+        {
+            if (outSocket.Connected)
+                return true;
+            else return false;
         }
     }
 }

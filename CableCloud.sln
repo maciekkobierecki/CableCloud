@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CableCloud", "CableCloud\CableCloud.csproj", "{E02B226A-49BE-4A0B-847F-130693831BBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tsst_client", "..\..\tsst_client\tsst_client\tsst_client.csproj", "{F9A62193-8C61-4DA8-BC84-ED8EFDF2104A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tsst_client", "..\tsst_client\tsst_client\tsst_client.csproj", "{F9A62193-8C61-4DA8-BC84-ED8EFDF2104A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

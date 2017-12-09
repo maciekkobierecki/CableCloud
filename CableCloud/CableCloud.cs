@@ -54,6 +54,7 @@ namespace CableCloud
                 }
                 catch (SocketException e)
                 {
+                    SendingManager.removeSocket(outputSocket);
                     Console.BackgroundColor = ConsoleColor.Black;
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.WriteLine("Node " + nodeName + " disconnected.");
